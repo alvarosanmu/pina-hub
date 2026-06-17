@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Piña Hub | Juegos Desbloqueados</title>
+    
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍍</text></svg>">
 </head>
 <body>
@@ -16,7 +17,7 @@
         </div>
         <div class="sys-status">
             <span class="status-item neon-yellow">● Red Blindada</span>
-            <span class="status-item">10 ms</span>
+            <span class="status-item">15 ms</span>
         </div>
     </header>
 
@@ -25,11 +26,14 @@
             <span class="giant-pineapple">🍍</span>
         </div>
         <h1>Piña Hub v2.0</h1>
-        <p>Catálogo optimizado con servidores espejo para saltar el filtro del instituto.</p>
+        <p>Catálogo definitivo alojado en servidores espejo para saltar el filtro del instituto.</p>
+        <div class="action-buttons">
+            <a href="#" class="btn btn-primary" onclick="alert('Presiona Ctrl + D para guardarme en marcadores')">Añadir a marcadores (Ctrl + D)</a>
+        </div>
     </section>
 
     <main class="content-section">
-        <h2>🎮 Juegos Desbloqueados (Enlaces GitHub & Espejos)</h2>
+        <h2>🎮 Catálogo Desbloqueado (Enlaces GitHub Mirror)</h2>
         <div class="games-grid" id="content-grid">
             
             <div class="item-card">
@@ -159,7 +163,7 @@
                 </div>
                 <div class="card-info">
                     <h3>Slither.io</h3>
-                    <span class="category">Espejo Limpio</span>
+                    <span class="category">Espejo Online</span>
                     <button class="play-btn" onclick="cargarJuego('https://slitherio.online/')">Jugar 🚀</button>
                 </div>
             </div>
@@ -180,7 +184,7 @@
             if (container && frame) {
                 frame.src = url;
                 container.style.display = 'block';
-                document.body.style.overflow = 'hidden'; 
+                document.body.style.overflow = 'hidden'; // Bloquea el scroll de la web de fondo
             }
         }
 
@@ -190,8 +194,8 @@
             
             if (container && frame) {
                 container.style.display = 'none';
-                frame.src = ''; 
-                document.body.style.overflow = 'auto'; 
+                frame.src = ''; // Corta el proceso y la música del juego al salir
+                document.body.style.overflow = 'auto'; // Devuelve el scroll normal
             }
         }
     </script>
