@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Piña Hub | Juegos Desbloqueados</title>
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍍</text></svg>">
+</head>
+<body>
+
+    <header class="top-nav">
+        <div class="brand">
+            <span class="pineapple-emoji">🍍</span>
+            <span class="brand-name">piña<span class="hub-tag">hub</span></span>
+        </div>
+        <div class="search-box">
+            <input type="text" id="search-input" onkeyup="filtrarContenido()" placeholder="Busca juegos, pelis, coches, tiros...">
+        </div>
+        <div class="sys-status">
+            <span class="status-item neon-yellow">● Online</span>
+            <span class="status-item">30 ms</span>
+        </div>
+    </header>
+
+    <section class="welcome-zone">
+        <div class="logo-container">
+            <span class="giant-pineapple">🍍</span>
+        </div>
+        <h1>Bienvenido a Piña Hub</h1>
+        <p>El catálogo más grande de juegos y streaming desbloqueados.</p>
+        <div class="action-buttons">
+            <a href="#" class="btn btn-primary" onclick="alert('Presiona Ctrl + D para guardarme en marcadores')">Añadir a marcadores (Ctrl + D)</a>
+        </div>
+    </section>
+
+    <main class="content-section">
+        <h2>🎮 Catálogo Piña (Juegos y Streaming)</h2>
+        <div class="games-grid" id="content-grid">
+
+            <div class="item-card" data-name="subway surfers poki correr esquivar saltar">
+                <div class="card-image-placeholder" style="background-image: linear-gradient(45deg, #f59e0b, #ef4444);">
+                    <span class="item-icon">🏃</span>
+                </div>
+                <div class="card-info">
+                    <h3>Subway Surfers</h3>
+                    <span class="category">Poki | Arcade</span>
+                    <button class="play-btn" onclick="window.open('https://poki.com/es/g/subway-surfers', '_blank')">Jugar 🚀</button>
+                </div>
+            </div>
+
+            <div class="item-card" data-name="penalty shooters 2 futbol penaltis deportes">
+                <div class="card-image-placeholder" style="background-image: linear-gradient(45deg, #059669, #10b981);">
+                    <span class="item-icon">⚽</span>
+                </div>
+                <div class="card-info">
+                    <h3>Penalty Shooters 2</h3>
+                    <span class="category">Fútbol / Penaltis</span>
+                    <button class="play-btn" onclick="window.open('https://www.retrogames.cc/embed/41727-penalty-shooters-2.html', '_blank')">Jugar 🚀</button>
+                </div>
+            </div>
+
+            <div class="item-card" data-name="geometry dash lite saltos musica ritmo">
+                <div class="card-image-placeholder" style="background-image: linear-gradient(45deg, #06b6d4, #3b82f6);">
+                    <span class="item-icon">📐</span>
+                </div>
+                <div class="card-info">
+                    <h3>Geometry Dash Lite</h3>
+                    <span class="category">Ritmo / Habilidad</span>
+                    <button class="play-btn" onclick="window.open('https://geometrydashlite.co/', '_blank')">Jugar 🚀</button>
+                </div>
+            </div>
+
+            <div class="item-card" data-name="krunker io fps shooter tiros armas accion">
+                <div class="card-image-placeholder" style="background-image: linear-gradient(45deg, #f59e0b, #e11d48);">
+                    <span class="item-icon">🎯</span>
+                </div>
+                <div class="card-info">
+                    <h3>Krunker.io</h3>
+                    <span class="category">FPS Shooter</span>
+                    <button class="play-btn" onclick="window.open('https://krunker.io/', '_blank')">Jugar 🚀</button>
+                </div>
+            </div>
+
+            <div class="item-card" data-name="voxiom io minecraft tiros battle royale armas">
+                <div class="card-image-placeholder" style="background-image: linear-gradient(45deg, #ef4444, #3b82f6);">
+                    <span class="item-icon">🔫</span>
+                </div>
+                <div class="card-info">
+                    <h3>Voxiom.io</h3>
+                    <span class="category">FPS / Battle Royale</span>
+                    <button class="play-btn" onclick="window.open('https://voxiom.io/', '_blank')">Jugar 🚀</button>
+                </div>
+            </div>
+
+            <div class="item-card" data-name="temple run 2 poki correr plataformas">
+                <div class="card-image-placeholder" style="background-image: linear-gradient(45deg, #b45309, #d97706);">
+                    <span class="item-icon">🗿</span>
+                </div>
+                <div class="card-info">
+                    <h3>Temple Run 2</h3>
+                    <span class="category">Poki | Arcade</span>
+                    <button class="play-btn" onclick="window.open('https://poki.com/es/g/temple-run-2', '_blank')">Jugar 🚀</button>
+                </div>
+            </div>
+
+            <div class="item
